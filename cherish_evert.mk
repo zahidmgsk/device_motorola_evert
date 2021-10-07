@@ -52,6 +52,13 @@ PRODUCT_PACKAGES += \
 # Recovery
 TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
+# Official
+CHERISH_BUILD_TYPE := OFFICIAL
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cherish.maintainer=ZahidM_Choudhry
+
 # Device identifiers
 PRODUCT_DEVICE := evert
 PRODUCT_NAME := cherish_evert
